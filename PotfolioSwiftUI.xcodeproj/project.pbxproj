@@ -15,6 +15,11 @@
 		F95577D02AAA68E500C7178E /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577CF2AAA68E500C7178E /* Experience.swift */; };
 		F95577D22AAA692F00C7178E /* Potfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577D12AAA692F00C7178E /* Potfolio.swift */; };
 		F95577D42AAA6A2700C7178E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577D32AAA6A2700C7178E /* AppModel.swift */; };
+		F95577D72AAA709100C7178E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577D62AAA709100C7178E /* HeaderView.swift */; };
+		F95577D92AAA77AC00C7178E /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577D82AAA77AC00C7178E /* SkillView.swift */; };
+		F95577DB2AAA798900C7178E /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577DA2AAA798900C7178E /* SkillsView.swift */; };
+		F95577DD2AAA812C00C7178E /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577DC2AAA812C00C7178E /* ExperienceView.swift */; };
+		F95577DF2AAA84BD00C7178E /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577DE2AAA84BD00C7178E /* ExperiencesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		F95577CF2AAA68E500C7178E /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		F95577D12AAA692F00C7178E /* Potfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potfolio.swift; sourceTree = "<group>"; };
 		F95577D32AAA6A2700C7178E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		F95577D62AAA709100C7178E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F95577D82AAA77AC00C7178E /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
+		F95577DA2AAA798900C7178E /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		F95577DC2AAA812C00C7178E /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
+		F95577DE2AAA84BD00C7178E /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,7 @@
 		F95577CA2AAA665E00C7178E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F95577D52AAA707100C7178E /* Suport Views */,
 				F95577BB2AAA657B00C7178E /* ContentView.swift */,
 			);
 			name = Views;
@@ -125,6 +136,18 @@
 				F95577D12AAA692F00C7178E /* Potfolio.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		F95577D52AAA707100C7178E /* Suport Views */ = {
+			isa = PBXGroup;
+			children = (
+				F95577D62AAA709100C7178E /* HeaderView.swift */,
+				F95577D82AAA77AC00C7178E /* SkillView.swift */,
+				F95577DA2AAA798900C7178E /* SkillsView.swift */,
+				F95577DC2AAA812C00C7178E /* ExperienceView.swift */,
+				F95577DE2AAA84BD00C7178E /* ExperiencesView.swift */,
+			);
+			name = "Suport Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,10 +222,15 @@
 			files = (
 				F95577CE2AAA687000C7178E /* Skill.swift in Sources */,
 				F95577D42AAA6A2700C7178E /* AppModel.swift in Sources */,
+				F95577DF2AAA84BD00C7178E /* ExperiencesView.swift in Sources */,
 				F95577BC2AAA657B00C7178E /* ContentView.swift in Sources */,
+				F95577DB2AAA798900C7178E /* SkillsView.swift in Sources */,
 				F95577BA2AAA657B00C7178E /* PotfolioSwiftUIApp.swift in Sources */,
+				F95577D92AAA77AC00C7178E /* SkillView.swift in Sources */,
 				F95577D22AAA692F00C7178E /* Potfolio.swift in Sources */,
 				F95577D02AAA68E500C7178E /* Experience.swift in Sources */,
+				F95577DD2AAA812C00C7178E /* ExperienceView.swift in Sources */,
+				F95577D72AAA709100C7178E /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
