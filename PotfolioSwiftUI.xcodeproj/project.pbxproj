@@ -14,6 +14,7 @@
 		F95577CE2AAA687000C7178E /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577CD2AAA687000C7178E /* Skill.swift */; };
 		F95577D02AAA68E500C7178E /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577CF2AAA68E500C7178E /* Experience.swift */; };
 		F95577D22AAA692F00C7178E /* Potfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577D12AAA692F00C7178E /* Potfolio.swift */; };
+		F95577D42AAA6A2700C7178E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577D32AAA6A2700C7178E /* AppModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F95577CD2AAA687000C7178E /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		F95577CF2AAA68E500C7178E /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
 		F95577D12AAA692F00C7178E /* Potfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Potfolio.swift; sourceTree = "<group>"; };
+		F95577D32AAA6A2700C7178E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				F95577B92AAA657B00C7178E /* PotfolioSwiftUIApp.swift */,
+				F95577D32AAA6A2700C7178E /* AppModel.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -117,8 +120,8 @@
 		F95577CC2AAA667400C7178E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F95577CD2AAA687000C7178E /* Skill.swift */,
 				F95577CF2AAA68E500C7178E /* Experience.swift */,
+				F95577CD2AAA687000C7178E /* Skill.swift */,
 				F95577D12AAA692F00C7178E /* Potfolio.swift */,
 			);
 			name = Models;
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F95577CE2AAA687000C7178E /* Skill.swift in Sources */,
+				F95577D42AAA6A2700C7178E /* AppModel.swift in Sources */,
 				F95577BC2AAA657B00C7178E /* ContentView.swift in Sources */,
 				F95577BA2AAA657B00C7178E /* PotfolioSwiftUIApp.swift in Sources */,
 				F95577D22AAA692F00C7178E /* Potfolio.swift in Sources */,
