@@ -10,4 +10,5 @@ import Foundation
 struct Skill: Identifiable {
     var id: String
     let skillName: String
+    let image: String
 }
