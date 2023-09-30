@@ -15,6 +15,7 @@ struct ExperienceView: View {
             Circle()
                 .frame(width: 10, height:  10)
                 .opacity(0.65)
+                .foregroundColor(.orange)
             
             HStack {
                 RoundedRectangle(cornerRadius: 8)
@@ -24,6 +25,7 @@ struct ExperienceView: View {
                 VStack(alignment: .leading) {
                     Text(experience.role)
                         .font(.system(size: 18.5))
+                        .foregroundColor(Color("Primary"))
                     
                     Text(experience.companyName)
                         .font(.system(size: 16.5))

@@ -14,22 +14,25 @@ struct ExperiencesView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             HStack(spacing: 16) {
-                Text("Experiences")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .opacity(0.9)
-                
+               
                 Button {
                     withAnimation(.easeOut(duration: 0.35)) {
                         showExperiences.toggle()
                     }
                 } label: {
+                    Text("Experiences")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .opacity(showExperiences ? 0.6  : 0.9)
+                    
+
                     Image(systemName: "chevron.up")
                         .font(.system(size: 19, weight: .medium))
                         .rotationEffect(self.showExperiences ? .zero : .degrees(180))
+                        .foregroundColor(showExperiences ? .secondary : Color("Primary"))
                 }
                 .buttonStyle(PlainButtonStyle())
-            }.padding(.bottom, 14) // HSTack
+            }.padding(.bottom, 5) // HSTack
             
             if(showExperiences) {
                 ForEach(experiences) { experience in

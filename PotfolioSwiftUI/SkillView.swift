@@ -10,22 +10,29 @@ import SwiftUI
 struct SkillView: View {
     // MARK: - variables
     var skill: Skill
-    var width: CGFloat = 120
+    var width: CGFloat = 150
+    
     var body: some View {
-        VStack(alignment: .trailing) {
-            Image(systemName: skill.image)
+        VStack(alignment: .center) {
+            Image(skill.image)
+                .resizable()
+                .scaledToFit()
                 .font(.system(size: 35, weight: .medium))
                 .opacity(0.8)
+                .padding(.bottom, 10)
             
             Text(skill.skillName)
-                .font(.headline)
-                .padding(.top, 10)
+                .font(.system(size: 13))
+                
+
         }
-        .padding()
-        .frame(width: width)
+        .padding(.vertical, 10)
+        .padding(.vertical, 10)
+        .frame(width: width, height: 110)
+        
         .background(
         RoundedRectangle(cornerRadius: 12)
-            .opacity(0.075)
+            .opacity(0.070)
         )
     }
 }

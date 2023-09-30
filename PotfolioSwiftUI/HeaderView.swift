@@ -11,6 +11,10 @@ struct HeaderView: View {
     //MARK: - variables
     var appModel: AppModel
     
+    @State var text: String = ""
+    // This is the final text that we want to show
+    var animatedText: String = "Welliton Araujo"
+    
     var body: some View {
         VStack {
             HStack {
@@ -27,32 +31,44 @@ struct HeaderView: View {
                 )
                 Spacer()
             }
-            Text(appModel.portfolio.name)
-                .font(.system(size: 22, weight: .semibold, design: .default))
-                .padding(.top, 9)
-            
-            Text(appModel.portfolio.role)
-                .font(.system(size: 23, weight: .medium, design: .monospaced))
-                .opacity(0.85)
-                .italic()
-                .padding(.top, -2)
-            
             HStack {
-                Image(systemName: "location.fill")
+                SocialView()
+                Spacer()
+                VStack {
+                    Text(appModel.portfolio.name)
+                        .font(.system(size: 22, weight: .semibold, design: .monospaced))
+                        .padding(.top, 9)
+                        .opacity(0.85)
                     
-                Text(appModel.portfolio.location)
-                    .font(.system(size: 17))
+                    Text(appModel.portfolio.role)
+                        .font(.system(size: 20, weight: .medium, design: .default))
+                        .opacity(0.75)
+                        .italic()
+                        .padding(.top, 3)
+                    
+                    HStack {
+                        Image(systemName: "location.fill")
+                            
+                        Text(appModel.portfolio.location)
+                            .font(.system(size: 15))
+                    }
+                    .padding(.top, 5)
+                    .opacity(0.45)
+                }
+                .padding(.trailing, 30)
+                Spacer()
+    
             }
-            .padding(.top, 10)
-            .opacity(0.45)
             
+
             Text(appModel.portfolio.description)
                 .font(.headline)
                 .fontWeight(.medium)
                 .italic()
                 .opacity(0.7)
-                .padding(.top, 24)
-                .lineSpacing(12)
+                .lineSpacing(8)
+                .padding(.top, 40)
+                .fontDesign(.monospaced)
         }
     }
 }
