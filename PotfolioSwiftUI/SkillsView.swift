@@ -17,19 +17,21 @@ struct SkillsView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 16) {
-                Text("Skills")
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .opacity(0.9)
                 
                 Button {
                     withAnimation(.easeOut(duration: 0.35)) {
                         showSkills.toggle()
                     }
                 } label: {
+                    Text("Skills")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .opacity(showSkills ? 0.6  : 0.9)
+                    
                     Image(systemName: "chevron.up")
                         .font(.system(size: 19, weight: .medium))
                         .rotationEffect(self.showSkills ? .zero : .degrees(180))
+                        .foregroundColor(showSkills ? .secondary : Color("Primary"))
                 }
                 .buttonStyle(PlainButtonStyle())
             } // HSTack
@@ -39,14 +41,15 @@ struct SkillsView: View {
                     GridItem(),
                     GridItem(),
                     GridItem()],
-                          alignment: .leading, spacing: 12) {
+                          alignment: .center, spacing: 12) {
+                    
                     ForEach(skills) { skill in
                         SkillView(skill: skill, width: width / 3 - 15)
                     }
-                }.padding(.top, 38) // - LazyVGrid
+                }.padding(.top, 10) // - LazyVGrid
             }
         }
-        .padding()
+        .padding(.horizontal, 16)
     }
 }
 

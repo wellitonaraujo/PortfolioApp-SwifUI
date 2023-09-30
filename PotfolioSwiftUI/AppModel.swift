@@ -9,12 +9,18 @@ import Foundation
 
 class AppModel: ObservableObject {
     var portfolio: Portfolio = Portfolio(
-        name: "Welliton Araujo",
+        name: "Welliton Araújo",
         role: "Mobile Developer",
-        description: "Desenvolvedor Mobile com grande experiência em consumo de cafeína enquanto faz uns códigos que só eu entendo...",
-        location: "Teresina - PI",
+        description: "Mobile developer with great experience in consuming caffeine while writing codes that only he understands...",
+        location: "Teresina, PI - Brazil",
         
         skiils: [
+        
+        Skill(
+            id: UUID().uuidString,
+            skillName: "React Native",
+            image: "reactjs"),
+        
         Skill(
             id: UUID().uuidString,
             skillName: "Swift",
@@ -22,25 +28,35 @@ class AppModel: ObservableObject {
         
         Skill(
             id: UUID().uuidString,
-            skillName: "UI/UX",
-            image: "square.grid.3x3.middleright.fill"),
+            skillName: "ReactJS",
+            image: "reactjs"),
         
         Skill(
             id: UUID().uuidString,
-            skillName: "IOS",
-            image: "iphone.gen1"),
+            skillName: "NodeJS",
+            image: "nodejs"),
+        
+        Skill(
+            id: UUID().uuidString,
+            skillName: "PostgreSQL",
+            image: "postgresql"),
+        
+        Skill(
+            id: UUID().uuidString,
+            skillName: "Figma",
+            image: "figma"),
         
     ], experiencies: [
-        Experience(
-                id: UUID().uuidString,
-                companyName: "Cellent Tec",
-                role: "Front End",
-                duration: "Jun 2021 - Ag 2022"),
-        
         Experience(
             id: UUID().uuidString,
             companyName: "Compass UOL",
             role: "Mobile Developer",
-            duration: "Jun 2022 - Present")
+            duration: "Jun 2022 - Present"),
+        
+        Experience(
+                id: UUID().uuidString,
+                companyName: "Cellent Tec",
+                role: "Front End Developer",
+                duration: "Jun 2021 - Mar 2022")
     ])
 }

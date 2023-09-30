@@ -20,6 +20,8 @@
 		F95577DB2AAA798900C7178E /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577DA2AAA798900C7178E /* SkillsView.swift */; };
 		F95577DD2AAA812C00C7178E /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577DC2AAA812C00C7178E /* ExperienceView.swift */; };
 		F95577DF2AAA84BD00C7178E /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577DE2AAA84BD00C7178E /* ExperiencesView.swift */; };
+		F9D6BE062AC30630006F0E56 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D6BE052AC30630006F0E56 /* SocialView.swift */; };
+		F9D6BE082AC310A3006F0E56 /* SwiftSkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D6BE072AC310A3006F0E56 /* SwiftSkillView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		F95577DA2AAA798900C7178E /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
 		F95577DC2AAA812C00C7178E /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
 		F95577DE2AAA84BD00C7178E /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
+		F9D6BE052AC30630006F0E56 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
+		F9D6BE072AC310A3006F0E56 /* SwiftSkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSkillView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,6 @@
 		F95577C82AAA663200C7178E /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				F95577CB2AAA666600C7178E /* Controllers */,
 				F95577CC2AAA667400C7178E /* Models */,
 				F95577C92AAA665500C7178E /* Services */,
 				F95577CA2AAA665E00C7178E /* Views */,
@@ -117,15 +120,9 @@
 			children = (
 				F95577D52AAA707100C7178E /* Suport Views */,
 				F95577BB2AAA657B00C7178E /* ContentView.swift */,
+				F9D6BE072AC310A3006F0E56 /* SwiftSkillView.swift */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		F95577CB2AAA666600C7178E /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Controllers;
 			sourceTree = "<group>";
 		};
 		F95577CC2AAA667400C7178E /* Models */ = {
@@ -142,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				F95577D62AAA709100C7178E /* HeaderView.swift */,
+				F9D6BE052AC30630006F0E56 /* SocialView.swift */,
 				F95577D82AAA77AC00C7178E /* SkillView.swift */,
 				F95577DA2AAA798900C7178E /* SkillsView.swift */,
 				F95577DC2AAA812C00C7178E /* ExperienceView.swift */,
@@ -225,11 +223,13 @@
 				F95577DF2AAA84BD00C7178E /* ExperiencesView.swift in Sources */,
 				F95577BC2AAA657B00C7178E /* ContentView.swift in Sources */,
 				F95577DB2AAA798900C7178E /* SkillsView.swift in Sources */,
+				F9D6BE062AC30630006F0E56 /* SocialView.swift in Sources */,
 				F95577BA2AAA657B00C7178E /* PotfolioSwiftUIApp.swift in Sources */,
 				F95577D92AAA77AC00C7178E /* SkillView.swift in Sources */,
 				F95577D22AAA692F00C7178E /* Potfolio.swift in Sources */,
 				F95577D02AAA68E500C7178E /* Experience.swift in Sources */,
 				F95577DD2AAA812C00C7178E /* ExperienceView.swift in Sources */,
+				F9D6BE082AC310A3006F0E56 /* SwiftSkillView.swift in Sources */,
 				F95577D72AAA709100C7178E /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
