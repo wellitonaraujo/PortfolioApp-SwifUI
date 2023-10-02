@@ -12,35 +12,53 @@ struct SocialView: View {
         VStack(spacing: 30) {
             Image("linkedin")
                 .resizable()
-                .frame(width: 24, height: 24)
+                .frame(width: 40, height: 40)
+                .background(
+                    Circle()
+                        .fill(.white)
+                        .opacity(1)
+                        .shadow(radius: 5)
+                )
                 .onTapGesture {
                     openSocial(type: "https://www.linkedin.com/in/wellitonaraujo")
                 }
             
             Image("github")
                 .resizable()
-                .frame(width: 18, height: 18)
+                .frame(width: 40, height: 40)
+                .background(
+                    Circle()
+                        .fill(.white)
+                        .opacity(1)
+                        .shadow(radius: 5)
+                )
                 .onTapGesture {
                     openSocial(type: "https://github.com/wellitonaraujo")
                 }
             
             Image("instagram")
                 .resizable()
-                .frame(width: 24, height: 24)
+                .frame(width: 40, height: 40)
+                .background(
+                    Circle()
+                        .fill(.white)
+                        .opacity(1)
+                        .shadow(radius: 5)
+                        
+                )
                 .onTapGesture {
                     openSocial(type: "https://www.instagram.com/welliton.dev")
                 }
         }
-        .opacity(0.90)
-        
-        .padding(.bottom, 5)
+
     }
     
     func openSocial(type: String) {
-            if let url = URL(string: type) {
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            }
+        if let url = URL(string: type) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
+    }
+    
 }
 
 struct SocialView_Previews: PreviewProvider {

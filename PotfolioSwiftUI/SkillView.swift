@@ -23,7 +23,7 @@ struct SkillView: View {
             
             Text(skill.skillName)
                 .font(.system(size: 13))
-                
+                .fontWeight(.medium)
 
         }
         .padding(.vertical, 10)

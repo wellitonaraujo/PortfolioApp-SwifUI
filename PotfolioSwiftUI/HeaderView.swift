@@ -21,7 +21,7 @@ struct HeaderView: View {
                 Spacer()
                 Image("profile")
                     .resizable()
-                    .frame(width: 105, height: 105)
+                    .frame(width: 100, height: 100)
                     .cornerRadius(50)
                     .padding(5)
                     .background(
@@ -59,7 +59,6 @@ struct HeaderView: View {
                 Spacer()
     
             }
-            
 
             Text(appModel.portfolio.description)
                 .font(.headline)

@@ -17,7 +17,6 @@ struct SkillsView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 16) {
-                
                 Button {
                     withAnimation(.easeOut(duration: 0.35)) {
                         showSkills.toggle()
@@ -26,7 +25,6 @@ struct SkillsView: View {
                     Text("Skills")
                         .font(.title)
                         .fontWeight(.semibold)
-                        .opacity(showSkills ? 0.6  : 0.9)
                     
                     Image(systemName: "chevron.up")
                         .font(.system(size: 19, weight: .medium))
