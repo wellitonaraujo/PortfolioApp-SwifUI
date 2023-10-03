@@ -12,7 +12,7 @@ struct SkillsView: View {
     var skills: [Skill]
     var width: CGFloat
     
-    @State var showSkills = true
+    @State var showSkills = false
     
     var body: some View {
         VStack(alignment: .leading) {

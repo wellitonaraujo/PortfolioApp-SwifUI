@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F906BDB62ACC344700678297 /* TypingTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906BDB52ACC344700678297 /* TypingTextViewModel.swift */; };
 		F906BDB82ACC38AE00678297 /* SocialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906BDB72ACC38AE00678297 /* SocialManager.swift */; };
+		F906BDBB2ACC4F5000678297 /* ReactNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906BDBA2ACC4F4F00678297 /* ReactNativeView.swift */; };
 		F95577BA2AAA657B00C7178E /* PotfolioSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577B92AAA657B00C7178E /* PotfolioSwiftUIApp.swift */; };
 		F95577BC2AAA657B00C7178E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577BB2AAA657B00C7178E /* ContentView.swift */; };
 		F95577BE2AAA657D00C7178E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95577BD2AAA657D00C7178E /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		F906BDB52ACC344700678297 /* TypingTextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingTextViewModel.swift; sourceTree = "<group>"; };
 		F906BDB72ACC38AE00678297 /* SocialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialManager.swift; sourceTree = "<group>"; };
+		F906BDBA2ACC4F4F00678297 /* ReactNativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeView.swift; sourceTree = "<group>"; };
 		F95577B62AAA657B00C7178E /* PotfolioSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PotfolioSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95577B92AAA657B00C7178E /* PotfolioSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotfolioSwiftUIApp.swift; sourceTree = "<group>"; };
 		F95577BB2AAA657B00C7178E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		F95577C72AAA65BD00C7178E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F96B93432AC8753500EF36CF /* LaunchScreen.storyboard */,
 				F95577BD2AAA657D00C7178E /* Assets.xcassets */,
 				F95577BF2AAA657D00C7178E /* Preview Content */,
 			);
@@ -146,7 +149,9 @@
 		F95577CA2AAA665E00C7178E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F95577BB2AAA657B00C7178E /* ContentView.swift */,
 				F95577D62AAA709100C7178E /* HeaderView.swift */,
+				F95C7F012ACB02EF003A10CD /* ContactView.swift */,
 				F98D2A5D2ACB436B005AD773 /* SocialButton.swift */,
 				F9D6BE052AC30630006F0E56 /* SocialView.swift */,
 				F95577D82AAA77AC00C7178E /* SkillView.swift */,
@@ -154,9 +159,7 @@
 				F95577DC2AAA812C00C7178E /* ExperienceView.swift */,
 				F95577DE2AAA84BD00C7178E /* ExperiencesView.swift */,
 				F95C7EFF2ACAEF8B003A10CD /* HomeView.swift */,
-				F95C7F012ACB02EF003A10CD /* ContactView.swift */,
-				F95577BB2AAA657B00C7178E /* ContentView.swift */,
-				F96B93432AC8753500EF36CF /* LaunchScreen.storyboard */,
+				F906BDBA2ACC4F4F00678297 /* ReactNativeView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				F95577D22AAA692F00C7178E /* Potfolio.swift in Sources */,
 				F95577D02AAA68E500C7178E /* Experience.swift in Sources */,
 				F95C7F022ACB02EF003A10CD /* ContactView.swift in Sources */,
+				F906BDBB2ACC4F5000678297 /* ReactNativeView.swift in Sources */,
 				F95577DD2AAA812C00C7178E /* ExperienceView.swift in Sources */,
 				F95577D72AAA709100C7178E /* HeaderView.swift in Sources */,
 			);

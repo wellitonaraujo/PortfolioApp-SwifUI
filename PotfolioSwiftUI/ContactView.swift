@@ -19,13 +19,13 @@ struct ContactView: View {
                     .font(.system(size: 22, weight: .bold, design: .monospaced))
                     .opacity(0.80)
                     
-                Text(viewModell.text)
+                Text(viewModell.roleText)
                .font(.system(size: 19, weight: .medium, design: .default))
                .opacity(0.70)
                //.italic()
             }
             
-            VStack(alignment: .leading, spacing: 15) {
+            VStack(alignment: .leading, spacing: 10) {
                 HStack {
                     Image(systemName: "location.fill")
                     Text(appModel.portfolio.location)
