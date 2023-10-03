@@ -47,7 +47,7 @@ struct SkillsView: View {
                 }.padding(.top, 10) // - LazyVGrid
             }
         }
-        .padding(.horizontal, 16)
+        .padding(.top, 30)
     }
 }
 

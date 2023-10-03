@@ -26,38 +26,17 @@ struct HeaderView: View {
                     .padding(5)
                     .background(
                         Circle()
-                            .opacity(0.7)
+                            .opacity(0.8)
                             .shadow(radius: 5)
                 )
                 Spacer()
             }
             HStack {
                 SocialView()
+                   
                 Spacer()
-                VStack {
-                    Text(appModel.portfolio.name)
-                        .font(.system(size: 22, weight: .semibold, design: .monospaced))
-                        .padding(.top, 9)
-                        .opacity(0.85)
-                    
-                    Text(appModel.portfolio.role)
-                        .font(.system(size: 20, weight: .medium, design: .default))
-                        .opacity(0.75)
-                        .italic()
-                        .padding(.top, 3)
-                    
-                    HStack {
-                        Image(systemName: "location.fill")
-                            
-                        Text(appModel.portfolio.location)
-                            .font(.system(size: 15))
-                    }
-                    .padding(.top, 5)
-                    .opacity(0.45)
-                }
-                .padding(.trailing, 30)
+                    ContactView(appModel: AppModel())
                 Spacer()
-    
             }
 
             Text(appModel.portfolio.description)
@@ -66,7 +45,7 @@ struct HeaderView: View {
                 .italic()
                 .opacity(0.7)
                 .lineSpacing(8)
-                .padding(.top, 40)
+                .padding(.top, 30)
                 .fontDesign(.monospaced)
         }
     }

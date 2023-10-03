@@ -14,7 +14,6 @@ struct ExperiencesView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             HStack(spacing: 16) {
-               
                 Button {
                     withAnimation(.easeOut(duration: 0.35)) {
                         showExperiences.toggle()
@@ -37,7 +36,7 @@ struct ExperiencesView: View {
                     ExperienceView(experience: experience)
                 }
             }
-        } .padding(.horizontal, 16)
+        }
     }
 }
 
