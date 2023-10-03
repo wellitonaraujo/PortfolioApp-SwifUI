@@ -13,7 +13,7 @@ struct SocialButton: View {
     
     var body: some View {
         Button(action: {
-            openSocial(type: link)
+            SocialManager.openSocial(type: link)
         }, label: {
             Image(image)
                 .resizable()
@@ -24,12 +24,6 @@ struct SocialButton: View {
                         .opacity(1)
                         .shadow(radius: 5))
         })
-    }
-    
-    func openSocial(type: String) {
-        if let url = URL(string: type) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
     }
 }
 
