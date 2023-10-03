@@ -9,12 +9,11 @@ import SwiftUI
 
 struct ExperiencesView: View {
     var experiences: [Experience]
-    @State var showExperiences = true
+    @State var showExperiences = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             HStack(spacing: 16) {
-               
                 Button {
                     withAnimation(.easeOut(duration: 0.35)) {
                         showExperiences.toggle()
@@ -23,8 +22,6 @@ struct ExperiencesView: View {
                     Text("Experiences")
                         .font(.title)
                         .fontWeight(.semibold)
-                        .opacity(showExperiences ? 0.6  : 0.9)
-                    
 
                     Image(systemName: "chevron.up")
                         .font(.system(size: 19, weight: .medium))
@@ -39,7 +36,7 @@ struct ExperiencesView: View {
                     ExperienceView(experience: experience)
                 }
             }
-        } .padding(.horizontal, 16)
+        }
     }
 }
 

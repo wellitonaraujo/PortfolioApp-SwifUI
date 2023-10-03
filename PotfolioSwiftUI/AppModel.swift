@@ -13,6 +13,8 @@ class AppModel: ObservableObject {
         role: "Mobile Developer",
         description: "Mobile developer with great experience in consuming caffeine while writing codes that only he understands...",
         location: "Teresina, PI - Brazil",
+        email: "welliton.araujo@uol.com.br",
+        fone: "(91 98571-5267)",
         
         skiils: [
         

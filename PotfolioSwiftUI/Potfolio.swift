@@ -12,6 +12,8 @@ struct Portfolio {
     let role: String
     let description: String
     let location: String
+    let email: String
+    let fone: String
     
     let skiils: [Skill]
     let experiencies: [Experience]

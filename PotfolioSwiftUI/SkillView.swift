@@ -23,17 +23,15 @@ struct SkillView: View {
             
             Text(skill.skillName)
                 .font(.system(size: 13))
-                
+                .fontWeight(.medium)
 
         }
-        .padding(.vertical, 10)
-        .padding(.vertical, 10)
+        .padding(.vertical, 20)
         .frame(width: width, height: 110)
-        
-        .background(
-        RoundedRectangle(cornerRadius: 12)
-            .opacity(0.070)
-        )
+        .background(.white)
+        .foregroundColor(.black)
+        .cornerRadius(12)
+        .shadow(radius: 3)
     }
 }
 
