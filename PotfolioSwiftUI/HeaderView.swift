@@ -11,10 +11,6 @@ struct HeaderView: View {
     //MARK: - variables
     var appModel: AppModel
     
-    @State var text: String = ""
-    // This is the final text that we want to show
-    var animatedText: String = "Welliton Araujo"
-    
     var body: some View {
         VStack {
             HStack {
@@ -33,7 +29,6 @@ struct HeaderView: View {
             }
             HStack {
                 SocialView()
-                   
                 Spacer()
                     ContactView(appModel: AppModel())
                 Spacer()
