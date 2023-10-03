@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F906BDB62ACC344700678297 /* TypingTextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906BDB52ACC344700678297 /* TypingTextViewModel.swift */; };
+		F906BDB82ACC38AE00678297 /* SocialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906BDB72ACC38AE00678297 /* SocialManager.swift */; };
 		F95577BA2AAA657B00C7178E /* PotfolioSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577B92AAA657B00C7178E /* PotfolioSwiftUIApp.swift */; };
 		F95577BC2AAA657B00C7178E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95577BB2AAA657B00C7178E /* ContentView.swift */; };
 		F95577BE2AAA657D00C7178E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95577BD2AAA657D00C7178E /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F906BDB52ACC344700678297 /* TypingTextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingTextViewModel.swift; sourceTree = "<group>"; };
+		F906BDB72ACC38AE00678297 /* SocialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialManager.swift; sourceTree = "<group>"; };
 		F95577B62AAA657B00C7178E /* PotfolioSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PotfolioSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95577B92AAA657B00C7178E /* PotfolioSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotfolioSwiftUIApp.swift; sourceTree = "<group>"; };
 		F95577BB2AAA657B00C7178E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F906BDB42ACC343200678297 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F906BDB52ACC344700678297 /* TypingTextViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F906BDB92ACC391600678297 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F906BDB72ACC38AE00678297 /* SocialManager.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		F95577AD2AAA657A00C7178E = {
 			isa = PBXGroup;
 			children = (
@@ -105,9 +125,11 @@
 		F95577C82AAA663200C7178E /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				F906BDB92ACC391600678297 /* Utils */,
 				F95577CC2AAA667400C7178E /* Models */,
-				F95577C92AAA665500C7178E /* Services */,
 				F95577CA2AAA665E00C7178E /* Views */,
+				F906BDB42ACC343200678297 /* ViewModel */,
+				F95577C92AAA665500C7178E /* Services */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -226,7 +248,9 @@
 				F95C7F002ACAEF8B003A10CD /* HomeView.swift in Sources */,
 				F95577DF2AAA84BD00C7178E /* ExperiencesView.swift in Sources */,
 				F95577BC2AAA657B00C7178E /* ContentView.swift in Sources */,
+				F906BDB62ACC344700678297 /* TypingTextViewModel.swift in Sources */,
 				F95577DB2AAA798900C7178E /* SkillsView.swift in Sources */,
+				F906BDB82ACC38AE00678297 /* SocialManager.swift in Sources */,
 				F9D6BE062AC30630006F0E56 /* SocialView.swift in Sources */,
 				F95577BA2AAA657B00C7178E /* PotfolioSwiftUIApp.swift in Sources */,
 				F95577D92AAA77AC00C7178E /* SkillView.swift in Sources */,

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContactView: View {
     var appModel: AppModel
+        
+    @ObservedObject private var viewModell = TypingTextViewModel()
     
     var body: some View {
         VStack {
@@ -16,15 +18,14 @@ struct ContactView: View {
                 Text(appModel.portfolio.name)
                     .font(.system(size: 22, weight: .bold, design: .monospaced))
                     .opacity(0.80)
-                
-               // Text(appModel.portfolio.role)
-               //     .font(.system(size: 19, weight: .medium, design: .default))
-               //     .opacity(0.70)
-                //    .italic()
+                    
+                Text(viewModell.text)
+               .font(.system(size: 19, weight: .medium, design: .default))
+               .opacity(0.70)
+               //.italic()
             }
-               
             
-            VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 15) {
                 HStack {
                     Image(systemName: "location.fill")
                     Text(appModel.portfolio.location)
